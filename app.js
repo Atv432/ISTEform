@@ -1,18 +1,19 @@
-// Get the form element
-const form = document.querySelector('form');
+function test()
+{
 
-// Add an event listener for form submission
-form.addEventListener('submit', (e) => {
-  e.preventDefault(); // Prevent the default form submission behavior
+var un = document.getElementById("first-name").value;
+var last = document.getElementById("last-name").value;
+var email = document.getElementById("email").value;
+var phone = document.getElementById("phone").value;
+var address = document.getElementById("address").value;
+var message = document.getElementById("message").value;
+
+var unD = localStorage.setItem("first-name",un);
+var lastD = localStorage.setItem("last-name",last);
+var emailD = localStorage.setItem("email",email);
+var phoneD = localStorage.setItem("phone",phone);
+var addressD = localStorage.setItem("address",address);
+var messageD = localStorage.setItem("message",message);
   
-  // Get the form values
-  const firstName = document.querySelector('#first-name').value;
-  const lastName = document.querySelector('#last-name').value;
-  const email = document.querySelector('#email').value;
-  const phone = document.querySelector('#phone').value;
-  const address = document.querySelector('#address').value;
-  const message = document.querySelector('#message').value;
-  
-  // Do something with the form values, for example:
   console.log(`First Name: ${firstName}\nLast Name: ${lastName}\nEmail: ${email}\nPhone: ${phone}\nAddress: ${address}\nMessage: ${message}`);
 });
