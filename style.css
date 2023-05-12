@@ -42,7 +42,7 @@ form {
     grid-template-rows: repeat(4 1fr);
     row-gap: 2%;
     column-gap: 3%;
-    color: #fff;
+    color: #000000;
 }
 
 input[type="text"],
